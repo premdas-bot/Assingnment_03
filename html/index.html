@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/2cc46467cb.js" crossorigin="anonymous"></script>
+    <!-- tailwind css and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- added custom font and color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#212121',
+                secondery: '#1C1C1C',
+                tertiary: '#494949',
+                gray: '#737373',
+                green: '#ABEF5F',
+                light_green: 'rgba(171, 239, 95, 0.5)',
+                gradient: 'rgba(255, 255, 255, 1)',
+                gradiant: 'rgba(255, 255, 255, 0)'
+              },
+              fontFamily: {
+                manrope: 'manrope'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-manrope">
+    <header class="bg-gradient-to-r from-slate-100 to-slate-50 px-4 md:px-0 md:container lg:max-w-screen-lg mx-auto border-2 border-red-400">
+         <!-- navigation section -->
+          <nav>
+            <div class="navbar bg-base-100 px-0 py-0 justify-between items-center">
+                <div class="md:flex-1 lg:grow-0">
+                  <div class="dropdown">
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                    <!-- company brand -->
+                  </div>
+                  <div class="inline-flex items-center gap-1">
+                    <div class="bg-green w-8 h-8 rounded-full relative">
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-primary absolute top-2 left-2"></i>
+                     </div>
+                     <a class="text-2xl lg:text-3xl font-extrabold">Rinterio</a>
+                  </div>
+                </div>
+                <div class=" hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-gray font-medium">
+                    <li><a><span class="text-secondery">Home</span></a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                  <!-- third column -->
+                   <div class="gap-3 hidden md:flex md:mr-5 lg:mr-0">
+                      <div class="border-gray border-2 rounded-full px-2 py-1 bg-white shadow-xl">
+                        <i class="fa-solid fa-magnifying-glass text-gray"></i>
+                      </div>
+                      <div class="border-gray border-2 rounded-full px-2 py-1 bg-white shadow-xl">
+                        <i class="fa-solid fa-cart-shopping text-gray"></i>
+                      </div>
+                      <div class="inline-flex items-center gap-2 bg-green px-4 py-2 rounded-full">
+                         <a class="text-primay font-extrabold text-lg" href="#">Book Consult</a>
+                         <div class="bg-primary w-7 h-7 rounded-full relative">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-white absolute top-1 left-2 text-sm"></i>
+                         </div>
+                      </div>
+                   </div>
+                   <!-- humble btn -->
+                <div class=" w-10 h-10 rounded-full bg-white shadow-xl lg:hidden">
+                    <i class="fa-solid fa-bars text-lg mx-auto"></i>
+                </div>
+              </div>
+          </nav>
+          <!-- banner section -->
+            <div class="hero">
+                <div class="hero-content text-center px-0">
+                  <div class="md:w-4/5">
+                    <div class=" w-4/5 mx-auto md:w-8/12 lg:w-8/12">
+                        <img class="w-full" src="../assets/banner.png" alt="">
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6">Every person deserves more than a mud hut with a thatched roof. We believe that everyone should have a safe place to sleep and a strong door to lock. This special place we call home gives us dignity and hope.</p>
+                    <div class="inline-flex justify-center items-center gap-2 bg-light_green w-full md:w-fit px-4 py-2 rounded-full">
+                      <a class="text-primay font-extrabold text-lg" href="#">View Details</a>
+                      <div class="bg-green w-7 h-7 rounded-full relative">
+                         <i class="fa-solid fa-arrow-right -rotate-45 text-white absolute top-1 left-2 text-sm"></i>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+            </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
